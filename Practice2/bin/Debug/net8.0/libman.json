@@ -1,0 +1,26 @@
+{
+  "version": "3.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@5.3.7",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "flowbite@3.1.2",
+      "destination": "wwwroot/flowbite/"
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/jquery/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@4.0.0",
+      "destination": "wwwroot/jquery-validation-unobtrusive/",
+      "files": [
+        "jquery.validate.unobtrusive.min.js",
+        "jquery.validate.unobtrusive.js"
+      ]
+    }
+  ]
+}
