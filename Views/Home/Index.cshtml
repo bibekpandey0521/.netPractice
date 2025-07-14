@@ -1,0 +1,22 @@
+﻿
+
+<div class="mb-2">
+    <a asp-action="Create" asp-controller="Home" class="text-white py-2.5 px-5 rounded-lg bg-blue-600 hover:bg-blue-800 focus:ring-blue-300 focus:ountline-none focus:ring">Add New User</a>
+    <a asp-action="GetUserList" hidden id="btn-getuser" asp-controller="Home" data-ajax="true" data-ajax-method="get" data-ajax-update="#getUsers" data-ajax-loading="#load">GetUser</a>
+    <div id="load" class="max-w-md mx-auto">
+        loading....
+    </div>
+</div>
+<div class="flex flex-wrap gap-2 mt-5" id="getUsers">
+</div>
+<script>
+    $(document).ready(function () {
+        $('#btn-getuser').click();
+
+        DeleteUser = function () {
+            alert("User Deleted.");
+            $('#btn-getuser').click();
+        }
+    });
+
+</script>
